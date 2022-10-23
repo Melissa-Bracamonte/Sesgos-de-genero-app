@@ -1,12 +1,14 @@
 import React from "react";
-import { registerables, Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import {
+  registerables,
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
-ChartJS.register(
-    Tooltip, 
-    Legend,
-    ArcElement, 
-    ...registerables);
+ChartJS.register(Tooltip, Legend, ArcElement, ...registerables);
 
 const DoughnutChart = ({ tweets }) => {
   var data = {
@@ -49,7 +51,7 @@ const DoughnutChart = ({ tweets }) => {
       },
     },
   };
-  
+
   return (
     <div>
       <Doughnut data={data} height={400} options={options} />

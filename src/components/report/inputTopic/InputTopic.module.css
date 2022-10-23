@@ -1,3 +1,9 @@
+.inputAndResult{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .input {
   display: flex;
   flex-direction: column;
