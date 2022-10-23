@@ -44,8 +44,10 @@ header {
   header nav a:hover {
     color: #800000;
     transform: scale(1.01);
+    font-weight: bold;
   }
 
   header nav a:focus {
     color: #800000;
+    font-weight: bold;
   }
