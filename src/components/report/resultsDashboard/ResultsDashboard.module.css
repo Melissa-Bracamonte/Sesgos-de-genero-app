@@ -3,14 +3,14 @@ main {
   margin-left: 18%;
 }
 
-main section {
+.result {
   flex-direction: column;
 }
 
 main h4 {
   color: #826857;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 main p {
