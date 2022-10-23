@@ -25,10 +25,11 @@
 .inputTopic{
     width: 336px;
     height: 40px;
-    color: #FFFFFF;
     background: #C7BACE;
+    color: #FFFFFF;
     font-size: 20px;
     border-radius: 5px;
+    border-color: #C7BACE;
 
 }
 
@@ -44,5 +45,6 @@
     color: #FFFFFF;
     background: #A687B8;
     border-radius: 10px;
+    border-color: #A687B8;
 
 }

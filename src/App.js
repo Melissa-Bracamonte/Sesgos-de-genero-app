@@ -1,6 +1,6 @@
 import './App.css';
-import InputTopic from './components/report/inputTopic/InputTopic'
-import Parameters from './components/report/parameters/Parameters'
+import ReportDashboard from './components/report/ReportDashboard'
+import ConditionalRender from './components/ConditionalRender'
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,17 +11,9 @@ import {
 
 function App() {
   return (
-    
-  <Router>
-    <p>
-      Hola mundo!!
-    </p>
-      <InputTopic/>
-      <Routes>
-        <Route path="/analysis" element={<Parameters/>}>
-       </Route>
-      </Routes>
-    </Router>
+    <>
+      <ReportDashboard/>
+</>
   );
 }
 
