@@ -1,0 +1,30 @@
+
+.parameters{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1077px;
+    height: 247px;
+    background: #FBEBD4;
+    box-shadow: -17px -9px 3px rgba(121, 120, 120, 0.25);
+    margin-top: 600px;
+}
+
+.text{
+    margin: 50px 90px;
+    margin-right: 90px;
+}
+.points{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 21px;
+    color: #A48091;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+
+color: #826857;
+}

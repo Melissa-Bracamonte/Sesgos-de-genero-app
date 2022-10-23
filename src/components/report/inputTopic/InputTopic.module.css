@@ -1,0 +1,50 @@
+
+.input{
+    display:flex;
+    flex-direction: column;
+    background: #FDF9F3;
+}
+
+.text{
+    margin-left: 260px;
+    margin-right: 260px;
+    display:flex;
+    text-align:center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #826857;
+}
+
+.fieldnbutton{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.inputTopic{
+    width: 336px;
+    height: 40px;
+    background: #C7BACE;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #C7BACE;
+
+}
+
+.inputTopic:focus{
+    outline: none;
+}
+
+.button{
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    width: 133px;
+    color: #FFFFFF;
+    background: #A687B8;
+    border-radius: 10px;
+    border-color: #A687B8;
+
+}
