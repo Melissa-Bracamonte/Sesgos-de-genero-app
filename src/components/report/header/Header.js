@@ -5,11 +5,11 @@ const Header = () => {
   return (
     <>
       <header>
-        <section>
+        <section className={styles.logo}>
         <h1>Logo</h1>
         <h4>#AbrazaLaDiversidad</h4>
         </section>
-        <nav>
+        {/* <nav>
           <ul className={styles.navList}>
             <li>
               <a href="#">Reporte</a>
@@ -18,7 +18,7 @@ const Header = () => {
               <a href="#">Configuración</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
     </>
   );

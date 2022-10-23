@@ -1,0 +1,20 @@
+.resultBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  height: 18vh;
+}
+
+.inputTopic {
+  height: 32vh;
+}
+
+.ResultsDashboard {
+  height: 25vh;
+}
+
+.parameters {
+  height: 25vh;
+}

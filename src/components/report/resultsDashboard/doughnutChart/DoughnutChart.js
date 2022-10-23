@@ -10,13 +10,13 @@ ChartJS.register(
 
 const DoughnutChart = ({ tweets }) => {
   var data = {
-    labels: ["Mujer", "Hombre", "Neutral"],
+    labels: ["Positivo", "Negativo", "Neutral"],
     datasets: [
       {
         label: "Hilos de tweets",
         data: [
-          tweets.map((item) => item.negativeTweets),
           tweets.map((item) => item.positiveTweets),
+          tweets.map((item) => item.negativeTweets),
           tweets.map((item) => item.neutralTweets),
         ],
         backgroundColor: [

@@ -9,9 +9,10 @@ const ResultsDashboard = () => {
   const [femalePercentage, setFemalePercentage] = useState();
   const [malePercentage, setMalePercentage] = useState();
   const [tweetWithoutBias, setTweetWithoutBias] = useState();
-
   const [negativeTweets, setNegativeTweets] = useState();
   const [positiveTweets, setPositiveTweets] = useState();
+  const [neutralTweets, setNeutralTweets] = useState();
+  const [mixedTweets, setMixedTweets] = useState();
 
   const getAllGender = () => {
     fetch("https://635337fca9f3f34c374f84f0.mockapi.io/gender")
@@ -33,6 +34,8 @@ const ResultsDashboard = () => {
         setTweets(tweets);
         setNegativeTweets(tweets.map((item) => item.negativeTweets));
         setPositiveTweets(tweets.map((item) => item.positiveTweets));
+        setNeutralTweets(tweets.map((item) => item.neutralTweets));
+        setMixedTweets(tweets.map((item) => item.mixedTweets));
       });
   };
 
@@ -44,7 +47,7 @@ const ResultsDashboard = () => {
   return (
     <>
       <main>
-        <section>
+        <section className={styles.result}>
           <h4>Tweets con sésgos de género</h4>
           <BarChart gender={gender} />
           <p>
@@ -52,19 +55,20 @@ const ResultsDashboard = () => {
             mujer de <strong>{femalePercentage}%</strong>, un porcentaje de
             sesgo hacia el hombre de <strong>{malePercentage}%</strong> y un
             porcentaje de tweets sin sesgos de género del{" "}
-            <strong>{tweetWithoutBias}</strong>%.
+            <strong>{tweetWithoutBias}%</strong>.
           </p>
         </section>
 
-        <section>
+        <section className={styles.result}>
           <h4>Sentimiento en los tweets</h4>
           <DoughnutChart tweets={tweets} />
           <p>
-            Los tweets encontrados tuvieron un porcentaje sentimientos negativos
-            del <strong>{negativeTweets}%</strong>, un porcentaje de
-            sentimientos positivos del
-            <strong>{positiveTweets}%</strong> y un porcentaje de tweets con
-            sentimientos neutral del <strong>{tweetWithoutBias}</strong>%.
+            Los tweets encontrados tuvieron un porcentaje de sentimientos
+            negativos del <strong>{negativeTweets}%</strong>, un porcentaje de
+            sentimientos positivos del <strong>{positiveTweets}%</strong>, un
+            porcentaje de tweets con sentimientos neutral del{" "}
+            <strong>{neutralTweets}%</strong> y un porcentaje de tweets en un
+            rango inconcluso del <strong>{mixedTweets}%</strong>.
           </p>
         </section>
       </main>
