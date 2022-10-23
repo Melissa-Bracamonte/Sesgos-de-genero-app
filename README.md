@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# #AbrazaLaDiversidad (Challenge Diversidad e inclusión - reto BBVA)
+<p align="center"><img src="https://w7.pngwing.com/pngs/771/451/png-transparent-group-of-children-and-earth-illustration-equality-and-diversity-multiculturalism-social-group-child-social-equality-youth-activities-hand-people-friendship-thumbnail.png"/> </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+* [1.Resumen del proyecto](#1-resumen-del-proyecto)
+* [2.Conoce nuestra aplicación](#2-conoce-nuestra-aplicacion)
+* [3.Creadores ](#3-creadores)
 
-In the project directory, you can run:
+***
 
-### `npm start`
+## 1. Resumen del proyecto
+**Conoce si esxisten sesgos de género en twitter** ¿Sabías que existen sesgos de género en los contenidos de internet que consumimos a diario de forma conciente o inconciente? ¿o que en los contenidos que comparten o comentan tus amigos pueden existir sesgos de género?
+Los sesgos de género son una una inclinación consiente o inconsiente a favor o en contra de una persona sin una base objetiva, es decir, puede ser con base en atributos que son inherentes a la persona y que no son cambiables, como puede ser el género, la nacionalidad, la religión, la etnia, etc.
+Con el propósito de detectar estos sesgos en los contenidos que consumimos a diario en la red social Twitter, hemos creado la iniciativa #AbrazaLaDiversidad, que está estructurada de la siguiente manera:
+* El usuario ingresa un tema de su interés que se esté tratando en twitter a través de la UI, los colores, la presentación y el diseño de la UI se seleccionaron con base en un análisis del usuario objetivo 
+* A partir de lo anterior se extraen los tweets relacionados al tema, usando la librería de python snscrape y se hace limpieza del texto mediante el uso de expresiones regulares, para posteriormente hacer la conexión del analizador de texto de aws, Amazon Comprehend.
+* Se hace el análisis del sentimiento de los tweets en Amazon Comprehend que internamente utiliza el esquema NLP y nos arroja un análisis del sentimiento reconociendo las entidades (personas, organizaciones, cosas, etc), palabras clave, sintaxis entre otras. 
+* Con los resultados del paso anterior se hace el análisis del sesgo a partir de un árbol de decisión y un modelo de la librería de Python nltk que nos permite determinar los géneros de las personas en los tweets, los resultados en este paso son si cada uno de los tweets analizados presentan sesgo o no -Se generan estadísticas usando lo que se obtuvo del análisis de sesgo: porcentajes de tweets sesgados hacía cualquiera de los géneros y porcentaje de tweets no sesgados. 
+* Se presentan los resultados al usuario por medio de gráficas que reflejen las estadísticas de manera intuitiva.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2. Conoce nuestra aplicación.
+ Prueba nuestra aplicación y esta funcionalidad que hemos pensado para ti. Danos un tema de tu interés que se esté tratando en Twitter y nosotros analizaremos si existen sesgos de género. Usa @ si quieres hacer una búsqueda por usuario, **no uses #**.
+ 
+ Visita nuestra App aquí [click aqui ](https://sesgos-de-genero-1pued2rd5-melissa-bracamonte.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## 3. Creadores.
+ 
+ * Berenice Zavala Jiménez - **Cientifica de datos**
 
-### `npm test`
+ * Melissa Bracamonte Jaraba - **Desarrolladora Frontend**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Jessica Astrid Valle Dávila - **Desarrolladora Backend**
 
-### `npm run build`
+* Emmanuel Rosas López - **Desarrollador Backend**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Marcos Olguín Martinez - **Cientifica de datos**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Jose Ángel Chavez Vizcaíno - **Desarrolladora Backend**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
