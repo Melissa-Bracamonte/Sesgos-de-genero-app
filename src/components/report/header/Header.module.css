@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    background-color: #F3B96B;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  section{
+    display: flex;
+  }
+
+  header h1 {
+    line-height: 100%;
+    margin: 0;
+    background: url(../../../../public/img/logo.png) center/contain no-repeat;
+    width: 100px;
+    height: 35px;
+    font-size: 0px;
+  }
+
+  header h4 {
+    color: #664631;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 80px 0 0;
+    gap: 20px;
+  }
+
+  header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.24s linear;
+  }
+
+  header nav a:hover {
+    color: #800000;
+    transform: scale(1.01);
+    font-weight: bold;
+  }
+
+  header nav a:focus {
+    color: #800000;
+    font-weight: bold;
+  }

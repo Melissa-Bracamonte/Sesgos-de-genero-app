@@ -1,11 +1,10 @@
-import './App.css';
+import "./App.css";
+import ReportDashboard from "../src/components/report/ReportDashboard";
 
 function App() {
   return (
     <>
-        <p>
-          Hola mundo!!
-        </p>
+      <ReportDashboard/>
     </>
   );
 }
