@@ -34,7 +34,7 @@ Con el propósito de detectar estos sesgos en los contenidos que consumimos a di
 
 * Emmanuel Rosas López - **Desarrollador Backend**
 
-* Marcos Olguín Martinez - **Cientifica de datos**
+* Marcos Olguín Martinez - **Cientifico de datos**
 
-* Jose Ángel Chavez Vizcaíno - **Desarrolladora Backend**
+* Jose Ángel Chavez Vizcaíno - **Desarrollador Backend**
 
